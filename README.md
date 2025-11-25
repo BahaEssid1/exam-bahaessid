@@ -1,59 +1,91 @@
-# ExamBahaessid
+Exam Angular – Baha Essid
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.9.
+This project is an Angular application for managing posts. It demonstrates component-based architecture, services, routing, and the use of Bootstrap for styling.
 
-## Development server
+📁 Project Structure
+exam-bahaessid/
+│
+├─ app/
+│  ├─ components/
+│  │  ├─ post-list/      # Component for displaying list of posts
+│  │  └─ login/          # Component for login page
+│  ├─ models/
+│  │  └─ post.ts         # Defines Post type
+│  ├─ services/
+│  │  ├─ post.ts         # Service providing posts data and CRUD operations
+│  │  └─ post.spec.ts    # Unit test for PostService
+│  ├─ app.html           # Root template including navbar and router-outlet
+│  ├─ app.ts             # Root component (App) configuration
+│  └─ app.config.ts      # Router configuration (if used)
+│
+├─ package.json
+└─ README.md
 
-To start a local development server, run:
+🛠 Features Implemented
 
-```bash
+Components
+
+AppComponent → Contains navbar and main container.
+
+PostListComponent → Displays posts using Bootstrap Accordion.
+
+LoginComponent → Shows "Login Page".
+
+Routing
+
+Home page (/) → PostListComponent
+
+Login page (/login) → LoginComponent
+
+Implemented with RouterOutlet and Angular standalone components.
+
+Services
+
+PostService → Provides a list of posts and methods to create, update, delete posts.
+
+PostService is injectable and used by PostListComponent.
+
+Models
+
+Post → TypeScript type defining post structure (id, titre, contenu).
+
+Styling
+
+Uses Bootstrap 5 for responsive layout and Accordion UI.
+
+Unit Testing
+
+post.spec.ts → Tests the PostService to ensure it is correctly created.
+
+🚀 How to Run the Project
+
+Clone the repository
+
+git clone https://github.com/BahaEssid1/exam-bahaessid.git
+cd exam-bahaessid
+
+
+Install dependencies
+
+npm install
+
+
+Run the application
+
 ng serve
-```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
-## Code scaffolding
+Open your browser at http://localhost:4200.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+🔗 Notes
 
-```bash
-ng generate component component-name
-```
+Front-end and back-end integration (REST API) is not implemented yet.
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Posts are currently hardcoded in PostService.
 
-```bash
-ng generate --help
-```
+Navigation between Home and Login pages works through Angular routing.
 
-## Building
 
-To build the project run:
+👨‍💻 Author
 
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Baha Essid – License Degree in IT – DevOps & Cloud Master Student

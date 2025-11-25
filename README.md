@@ -3,7 +3,8 @@ Exam Angular – Baha Essid
 This project is an Angular application for managing posts. It demonstrates component-based architecture, services, routing, and the use of Bootstrap for styling.
 
 📁 Project Structure
-  
+
+```text
 exam-bahaessid/
 ├── app/
 │   ├── components/

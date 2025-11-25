@@ -3,23 +3,22 @@ Exam Angular – Baha Essid
 This project is an Angular application for managing posts. It demonstrates component-based architecture, services, routing, and the use of Bootstrap for styling.
 
 📁 Project Structure
+  
   exam-bahaessid/
-  │
-  ├  ─ app/
-  │ ├─ components/
-  │ │ ├─ post-list/ # Component for displaying list of posts
-  │ │ └─ login/ # Component for login page
-  │ ├─ models/
-  │ │ └─ post.ts # Defines Post type
-  │ ├─ services/
-  │ │ ├─ post.ts # Service providing posts data and CRUD operations
-  │ │ └─ post.spec.ts # Unit test for PostService
-  │ ├─ app.html # Root template including navbar and router-outlet
-  │ ├─ app.ts # Root component (App) configuration
-  │ └─ app.config.ts # Router configuration (if used)
-  │
-  ├─ package.json
-  └─ README.md
+├─ app/
+│ ├─ components/
+│ │ ├─ post-list/ # Component for displaying list of posts
+│ │ └─ login/ # Component for login page
+│ ├─ models/
+│ │ └─ post.ts # Defines Post type
+│ ├─ services/
+│ │ ├─ post.ts # Service providing posts data and CRUD operations
+│ │ └─ post.spec.ts # Unit test for PostService
+│ ├─ app.html # Root template including navbar and router-outlet
+│ ├─ app.ts # Root component (App) configuration
+│ └─ app.config.ts # Router configuration (if used)
+├─ package.json
+└─ README.md
 
 🛠 Features Implemented
 

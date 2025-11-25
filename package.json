@@ -3,11 +3,13 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve, ",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:exam-bahaessid": "node dist/exam-bahaessid/server/server.mjs"
+    "serve:ssr:exam-bahaessid": "node dist/exam-bahaessid/server/server.mjs",
+    "backend:start": "node server.js",
+    "backend:dev": "nodemon server.js"
   },
   "prettier": {
     "printWidth": 100,
@@ -50,6 +52,21 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "nodemon": "^3.1.11",
     "typescript": "~5.9.2"
-  }
+  },
+  "description": "This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.9.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BahaEssid1/exam-bahaessid.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/BahaEssid1/exam-bahaessid/issues"
+  },
+  "homepage": "https://github.com/BahaEssid1/exam-bahaessid#readme"
 }
